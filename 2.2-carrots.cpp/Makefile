@@ -35,5 +35,5 @@ clean.o :
 
 .PHONY : run
 
-run : 
+run : main.out
 	./main.out

@@ -22,6 +22,6 @@ void simon(int n)
 {
 	using namespace std;
 
-	cout << "Simon says touch your toes " << n << " times." << endl;
+	cout << "Simon says touch your toes " << n<< " times." << endl;
 }
 
