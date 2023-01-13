@@ -26,7 +26,7 @@ Cpp-Learning
 
 ## Usage
 
-Use `git` to pull the project.
+Use `git` to clone the project.
 
 Use `cd` command to a certain sub-project.
 
@@ -34,8 +34,7 @@ Use `GNU Make` to build the sub-project.
 
 - `make` : Compile the code.
 - `make clean` : Clean all files built by `make`.
-- `make clean.d` : Clean all `.d` files.
-- `make clean.o` : Clean all `.o` files.
-
-- `make clean.out` : Clean all `.out` files.
+- `make clean-d` : Clean all `.d` files.
+- `make clean-o` : Clean all `.o` files.
+- `make clean-out` : Clean all `.out` files.
 - `make run` : Run `main.out` without arguments.
