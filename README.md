@@ -20,6 +20,7 @@ Cpp-Learning
 ├─ Demo
 │   └── Makefile
 ├─ prj.sh
+├─ deal_makefile.sh
 └─ README.md
 ```
 
