@@ -10,30 +10,30 @@ $(TARGET) : $(OBJ)
 %.d : %.cpp
 	set -e; rm -f $@; \
 	$(CXX) -MM $(CXXFLAGS) $< > $@.$$$$; \
-	sed 's,\($*\)\.o[ : ]*,\1.o $@ : ,g' < $@.$$$$ > $@; \
+	sed -E 's/($*)\.o[ : ]*/\1.o $@ : /g' < $@.$$$$ > $@; \
 	rm -f $@.$$$$
 
 -include $(SOURCES:.cpp=.d) 
 
 .PHONY : clean
 	
-clean : clean.d clean.out clean.o
+clean : clean_d clean_out clean_o
 
-.PHONY : clean.d
+.PHONY : clean_d
 
-clean.d : 
+clean_d : 
 	-rm -f *.d
 
-.PHONY : clean.out
+.PHONY : clean_out
 
-clean.out : 
+clean_out : 
 	-rm -f *.out
 
-.PHONY : clean.o
-clean.o : 
+.PHONY : clean_o
+clean_o : 
 	-rm -f *.o
 
 .PHONY : run
 
-run : 
+run : $(TARGET) 
 	./main.out
