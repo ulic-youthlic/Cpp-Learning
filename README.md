@@ -12,6 +12,7 @@ You can `cd` to a sub-project, and use command `make` to build the program file.
 
 ## Structure
 
+```
 Cpp-Learning
 ├─ n.m-example.cpp
 │   ├── main.cpp
@@ -20,6 +21,7 @@ Cpp-Learning
 │   └── Makefile
 ├─ prj.sh
 └─ README.md
+```
 
 ## Usage
 
