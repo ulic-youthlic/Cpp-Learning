@@ -26,8 +26,10 @@ clean_all (){
 make_all (){
     copy_makefile
     for m in $(ls | grep -E "^[0-9]" | paste -sd\ ); do
+        echo "$m"; \
         cd ./"$m" ; \
         make; \
+        echo ''; \
         cd ..
     done
 } 
