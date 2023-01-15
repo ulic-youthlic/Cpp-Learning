@@ -1,6 +1,6 @@
 SOURCES := $(wildcard *.cpp)
 CXX := g++
-CXXFLAGS := -Wall 
+CXXFLAGS := -Wall
 OBJ := $(SOURCES:.cpp=.o)
 TARGET := main.out
 
