@@ -2,10 +2,9 @@
 
 #include <iostream>
 
-int main(void)
-{
-	std::cout << "Name: your name.\n"
-			  << "Adress: your adress.\n";
+int main(void) {
+  std::cout << "Name: your name.\n"
+            << "Adress: your adress.\n";
 
-	return 0;
+  return 0;
 }

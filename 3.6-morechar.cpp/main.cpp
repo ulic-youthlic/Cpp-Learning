@@ -2,27 +2,26 @@
 
 #include <iostream>
 
-int main(void)
-{
-	using namespace std;
+int main(void) {
+  using namespace std;
 
-	char ch = 'M';
-	int i = ch;
+  char ch = 'M';
+  int i = ch;
 
-	cout << "The ASCII code for " << ch << " is " << i << endl;
-	cout << "Add one to the character code:" << endl;
-	ch = ch + 1;
-	i = ch;
-	cout << "The ASCII code for " << ch << " is " << i << endl;
+  cout << "The ASCII code for " << ch << " is " << i << endl;
+  cout << "Add one to the character code:" << endl;
+  ch = ch + 1;
+  i = ch;
+  cout << "The ASCII code for " << ch << " is " << i << endl;
 
-	// usingthe cout.put() member function to display a char
-	cout << "Displaying char ch using cout.put(ch): ";
-	cout.put(ch);
+  // usingthe cout.put() member function to display a char
+  cout << "Displaying char ch using cout.put(ch): ";
+  cout.put(ch);
 
-	// using cout.put() to display a char constant
-	cout.put('!');
+  // using cout.put() to display a char constant
+  cout.put('!');
 
-	cout << endl << "Done" << endl;
+  cout << endl << "Done" << endl;
 
-	return 0;
+  return 0;
 }
