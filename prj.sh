@@ -1,7 +1,7 @@
 #!/bin/bash
 # This bash script is used to creat a new project.
 # Usage: `./prj.sh <NewProjectName>`
-nprj () {
+nprj() {
     mkdir "./$1"
     cp ./Demo/Makefile "./$1"
 }
