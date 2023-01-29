@@ -1,19 +1,19 @@
 #!/bin/env bash
 # remove all makefile
-rm_makefile (){
-    find . -name Makefile | grep -E -v "Demo" | xargs rm -f
+rm_makefile(){
+    find . -name Makefile | grep -E -v "Demo"
 }
 
 # copy makefile
-copy_makefile (){
+copy_makefile(){
     rm_makefile
     for n in $(ls | grep -E "^[0-9]" | paste -sd\ ); do
         cp ./Demo/Makefile ./"$n"/Makefile
     done
-} 
+}
 
-# Clean all *.o,*.out,*.d files
-clean_all (){
+# Clean all *.o, *.out, *.d files
+clean_all(){
     copy_makefile
     for m in $(ls | grep -E "^[0-9]" | paste -sd\ ); do
         cd ./"$m" ; \
@@ -23,7 +23,7 @@ clean_all (){
 }
 
 # Make all projects
-make_all (){
+make_all(){
     copy_makefile
     for m in $(ls | grep -E "^[0-9]" | paste -sd\ ); do
         echo "$m"; \
@@ -32,4 +32,4 @@ make_all (){
         echo ''; \
         cd ..
     done
-} 
+}
